@@ -46,6 +46,12 @@ var_dump($games);
 
 <body>
     <h1>Risultati:</h1>
+
+    <?php for ($i = 0; $i < count($games); $i++) { ?>
+
+        <p><?php echo $games[$i]['home'] . ' - ' . $games[$i]['away'] . ' | ' . $games[$i]['home_score'] . ' - ' . $games[$i]['away_score'] ?></p>
+
+    <?php } ?>
 </body>
 
 </html>
